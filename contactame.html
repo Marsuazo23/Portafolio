@@ -24,38 +24,44 @@
             </div>
 
             <div class="panel-form">
-                 <form action="contactame.html" method="GET">
+                 <form action="https://formsubmit.co/marcesuazo2004@gmail.com" method="POST">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_next" value="https://marsuazo23.github.io/Portafolio/index.html">
+
                     <div class="form-row">
                         <div class="form-group">
-                             <label for="txtNombre">Nombre:</label>
-                            <input id="txtNombre" type="text" placeholder="Nombre Completo"/>
-                            </div>
-                            <div class="form-group">
+                            <label for="txtNombre">Nombre:</label>
+                            <input id="txtNombre" name="Nombre" type="text" placeholder="Nombre Completo" required>
+                        </div>
+
+                        <div class="form-group">
                             <label for="txtApellido">Apellido:</label>
-                            <input id="txtApellido" type="text" placeholder="Apellido Completo"/>
+                            <input id="txtApellido" name="Apellido" type="text" placeholder="Apellido Completo" required>
                         </div>
                     </div>
-                        
+
                     <div class="form-group">
                         <label for="txtEmail">Email:</label>
-                        <input id="txtEmail" name="txtEmail" type="email" placeholder="tucorreo@electronico.com"/>
+                        <input id="txtEmail" name="Email" type="email" placeholder="tucorreo@electronico.com" required>
                     </div>
-                
+
                     <div class="form-group">
                         <label for="txtTeléfono">Número de teléfono:</label>
-                        <input id="txtTeléfono" type="text" placeholder="Número de teléfono"/>
+                        <input id="txtTeléfono" name="Telefono" type="text" placeholder="Número de teléfono">
                     </div>
-                
+
                     <div class="form-group">
                         <label for="txtComentarios">Comentarios:</label>
-                        <textarea id="txtComentarios" name="txtBio" placeholder="Tu comentario"></textarea>
+                        <textarea id="txtComentarios" name="Comentarios" placeholder="Tu comentario" required></textarea>
                     </div>
 
                     <div class="form-group">
                         <button type="submit" name="btnEnviar" class="btn-enviar">Enviar</button>
                     </div>
+                </form>
 
-                    </form>
                 </div>  
         </main>
 
